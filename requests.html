@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests - Resident's Management System</title>
+    <!-- Google Fonts: Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="sidebar-overlay"></div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="unit-dropdown">
+                    Floor 12, Unit T <i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+            </div>
+
+            <ul class="list-unstyled nav-menu">
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="billing.html" class="nav-link">Billings & Payments</a></li>
+                <li><a href="my-unit.html" class="nav-link">My Unit</a></li>
+                <li><a href="requests.html" class="nav-link active">Requests</a></li>
+                <li><a href="account-settings.html" class="nav-link">Account Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class="mobile-header d-lg-none mb-3">
+                <i class="bi bi-list mobile-nav-toggle" id="sidebarCollapse"></i>
+            </div>
+
+            <div class="header-section">
+                <h2 class="dashboard-title">Requests</h2>
+                <p class="dashboard-subtitle">CONNECT WITH US</p>
+            </div>
+            
+            <hr class="my-4">
+
+            <!-- FAQ Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="section-title mb-4">Frequently Asked Requests & Questions</h4>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item faq-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                    How do I pay for the Essentials or Premium plan?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis ultrices malesuada. Suspendisse ut purus iaculis, interdum diam sit amet, dictum risus. Praesent eleifend at tellus et ultrices. Aliquam tristique nisi at nulla porta sagittis. Cras quis neque iaculis, commodo tortor a, dictum ligula. In vel malesuada tellus. Nam tincidunt, libero sed hendrerit pharetra, quam elit sagittis neque, vel finibus elit libero eget justo. Nam varius vitae augue quis scelerisque. Proin dui felis, fermentum varius ligula sit amet, tincidunt iaculis leo. Nulla posuere efficitur pharetra.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item faq-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                                    How do I pay for the Essentials or Premium plan?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item faq-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                                    How do I pay for the Essentials or Premium plan?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item faq-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+                                    How do I pay for the Essentials or Premium plan?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item faq-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
+                                    How do I pay for the Essentials or Premium plan?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Request Form Section -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h4 class="section-title mb-4">Have a Request or Question?</h4>
+                    
+                    <form id="requestForm" class="request-form-card">
+                        <div class="row">
+                            <div class="col-md-7 mb-4">
+                                <label class="form-label-request">SUBJECT</label>
+                                <input type="text" class="form-control request-input" placeholder="Can I cancel my Essentials or Premium plan at any time?">
+                            </div>
+                            <div class="col-md-5 mb-4">
+                                <label class="form-label-request">UNIT</label>
+                                <input type="text" class="form-control request-input" value="Tower 1, Floor 12, Unit T" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="form-label-request">MESSAGE</label>
+                            <textarea class="form-control request-textarea" rows="8">Hi</textarea>
+                        </div>
+                        
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-request-send">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap 5.3.2 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Payments - Resident's Management System</title>
+    <!-- Google Fonts: Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="sidebar-overlay"></div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="unit-dropdown">
+                    Floor 12, Unit T <i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+            </div>
+
+            <ul class="list-unstyled nav-menu">
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="billing.html" class="nav-link active">Billings & Payments</a></li>
+                <li><a href="my-unit.html" class="nav-link">My Unit</a></li>
+                <li><a href="requests.html" class="nav-link">Requests</a></li>
+                <li><a href="account-settings.html" class="nav-link">Account Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class="mobile-header d-lg-none mb-3">
+                <i class="bi bi-list mobile-nav-toggle" id="sidebarCollapse"></i>
+            </div>
+
+            <div class="header-section">
+                <h2 class="dashboard-title">Billing & Payments</h2>
+                <p class="dashboard-subtitle">INFORMATION REGARDING YOUR BILLING AND UTILITIES PAYMENT</p>
+            </div>
+            
+            <hr class="my-4">
+
+            <!-- Summary Cards -->
+            <div class="row mb-5">
+                <div class="col-lg-7 mb-4">
+                    <div class="summary-card h-100">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label class="info-label">UNIT PRICE</label>
+                                <div class="font-sm bold-2x mt-1">USD 500,000</div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="info-label">INSTALMENT PLAN</label>
+                                <div class="font-sm bold-2x mt-1">USD 50,000 / 24 MONTHS</div>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <label class="info-label mb-2">PAYMENT MADE</label>
+                            <div class="progress-container">
+                                <div class="progress-bar-custom" style="width: 86%;">
+                                    USD 450,000 | 86% COMPLETED
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4">
+                    <div class="summary-card h-100 position-relative">
+                        <label class="info-label mb-3">MAIN PAYMENT METHOD</label>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="mastercard-logo">
+                                <span class="circle-red"></span>
+                                <span class="circle-orange"></span>
+                            </div>
+                            <div>
+                                <div class="bold-2x font-xs">Master Card</div>
+                                <div class="text-muted font-xs">**** **** **** 4003</div>
+                                <div class="text-muted" style="font-size: 0.6rem; font-weight: 700; text-transform: uppercase;">EXPIRY ON 11/2027</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-change-payment">CHANGE</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Billing Section -->
+            <div class="billing-section">
+                <h3 class="section-title mb-4">Billing</h3>
+                
+                <div class="table-responsive">
+                    <table class="table billing-table">
+                        <thead>
+                            <tr>
+                                <th>PAYMENT <i class="bi bi-chevron-down"></i></th>
+                                <th>AMOUNT <i class="bi bi-chevron-down"></i></th>
+                                <th>BILLING NUMBER <i class="bi bi-chevron-down"></i></th>
+                                <th>BILLING DATE <i class="bi bi-chevron-down"></i></th>
+                                <th>STATUS <i class="bi bi-chevron-down"></i></th>
+                                <th>ACTION</th>
+                                <th>INVOICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1: Awaiting Payment -->
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DUE JANUARY 5</span></td>
+                                <td><span class="status-badge status-awaiting">AWAITING PAYMENT</span></td>
+                                <td><button class="btn btn-pay-now">PAY NOW</button></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <!-- Row 2: Paid -->
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td><span class="status-badge status-paid">PAID</span></td>
+                                <td></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <!-- Sample Paid Rows -->
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td><span class="status-badge status-paid">PAID</span></td>
+                                <td></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <!-- Row 4: Failed -->
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="status-badge status-failed">FAILED</span>
+                                        <i class="bi bi-info-circle text-muted" style="font-size: 0.8rem;"></i>
+                                    </div>
+                                </td>
+                                <td><button class="btn btn-pay-now">PAY NOW</button></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <!-- More Paid Rows -->
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td><span class="status-badge status-paid">PAID</span></td>
+                                <td></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td><span class="status-badge status-paid">PAID</span></td>
+                                <td></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td><span class="status-badge status-paid">PAID</span></td>
+                                <td></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="table-val">Instalment</span></td>
+                                <td><span class="table-val">USD 500</span></td>
+                                <td><span class="table-val">LV/2025/5746</span></td>
+                                <td><span class="table-date">DECEMBER 5</span></td>
+                                <td><span class="status-badge status-paid">PAID</span></td>
+                                <td></td>
+                                <td><a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-container d-flex justify-content-between align-items-center mt-4">
+                    <div class="pagination-info">SHOWING <span class="bold-2x">10</span> OUT OF <span class="bold-2x">23</span></div>
+                    <div class="pagination-nav d-flex gap-2">
+                        <a href="#" class="page-num active">01</a>
+                        <a href="#" class="page-num">02</a>
+                        <a href="#" class="page-num">03</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap 5.3.2 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

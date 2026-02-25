@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Resident's Management System</title>
+    <!-- Google Fonts: Figtree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Swiper 11 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="sidebar-overlay"></div>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="unit-dropdown">
+                    Floor 12, Unit T <i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+            </div>
+
+            <ul class="list-unstyled nav-menu">
+                <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+                <li><a href="billing.html" class="nav-link">Billings & Payments</a></li>
+                <li><a href="my-unit.html" class="nav-link">My Unit</a></li>
+                <li><a href="requests.html" class="nav-link">Requests</a></li>
+                <li><a href="account-settings.html" class="nav-link">Account Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class="mobile-header d-lg-none mb-3">
+                <i class="bi bi-list mobile-nav-toggle" id="sidebarCollapse"></i>
+            </div>
+
+            <div class="header-section">
+                <h2 class="dashboard-title">Dashboard</h2>
+                <p class="dashboard-subtitle">EFFORTLESSLY HANDLE YOUR BILLING AND INVOICES</p>
+            </div>
+            
+            <hr class="my-4">
+
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <!-- Mobile Only Profile Header -->
+                <div class="profile-header-mobile d-lg-none">
+                    <div class="profile-img-placeholder"></div>
+                    <div class="profile-info">
+                        <h3>Alex J. Kusuma</h3>
+                        <div class="profile-badge">#2020-05-0001</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Photo -->
+                <div class="profile-img-placeholder d-none d-lg-block"></div>
+                
+                <div class="profile-info">
+                    <h3 class="d-none d-lg-block">Alex J. Kusuma</h3>
+                    <div class="info-grid">
+                        <div class="info-group">
+                            <div class="info-label">UNIT</div>
+                            <div class="info-value">TOWER 2, FLOOR 12, UNIT T</div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <div class="info-label">OFFICE AREA</div>
+                            <div class="info-value">100 M²</div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <div class="info-label">PURCHASED DATE</div>
+                            <div class="info-value">JANUARY 27, 2024</div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <div class="info-label">UNIT PRICE</div>
+                            <div class="info-value">USD 500,000</div>
+                        </div>
+                        
+                        <div class="info-group">
+                            <div class="info-label">TERM OF PAYMENT</div>
+                            <div class="info-value">24 MONTHS INSTALMENT</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Only Badge -->
+                <div class="profile-badge d-none d-lg-block">#2020-05-0001</div>
+                
+                <div class="payment-sum">
+                    <div class="sum-label">TOTAL PAYMENT MADE</div>
+                    <div class="sum-value">USD 450,000</div>
+                </div>
+            </div>
+
+            <!-- Mobile Tabs -->
+            <div class="mobile-tabs d-lg-none">
+                <a href="#" class="tab-item active" data-target="recent">RECENT</a>
+                <a href="#" class="tab-item" data-target="upcoming">UPCOMING</a>
+            </div>
+            <p class="tab-desc-text d-lg-none">Latest payment transactions</p>
+
+            <!-- Payments Section -->
+            <div class="row payment-row">
+                <!-- Recent Payments -->
+                <div class="col-lg-6 mb-4 tab-content active" id="recent">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div>
+                                <h4 class="card-header-title">Recent Payments</h4>
+                                <p class="card-header-subtitle">Latest payment transactions</p>
+                            </div>
+                        </div>
+                        <div class="payment-list">
+                            <!-- Item Wrapper for Mobile Compatibility -->
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID DECEMBER 4</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID DECEMBER 4</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID DECEMBER 4</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID DECEMBER 4</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <a href="#" class="btn-download"><i class="bi bi-download"></i> DOWNLOAD INVOICE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Payments -->
+                <div class="col-lg-6 mb-4 tab-content" id="upcoming">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div>
+                                <h4 class="card-header-title">Upcoming Payments</h4>
+                                <p class="card-header-subtitle">Payment dues & reminders</p>
+                            </div>
+                            <i class="bi bi-file-earmark-text fs-4 text-muted d-none d-lg-block"></i>
+                        </div>
+                        <div class="payment-list">
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Instalment</h5>
+                                    <p>DUE JANUARY 5</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <span class="status-badge status-awaiting">AWAITING PAYMENT</span>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <span class="status-badge status-paid">PAID</span>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <span class="status-badge status-paid">PAID</span>
+                                </div>
+                            </div>
+                            <div class="payment-item">
+                                <div class="item-desc">
+                                    <h5>Monthly Utilities</h5>
+                                    <p>PAID</p>
+                                </div>
+                                <div class="item-amount">
+                                    <div class="amount-value">USD 500</div>
+                                    <span class="status-badge status-paid">PAID</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap 5.3.2 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper 11 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
