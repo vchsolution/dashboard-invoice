@@ -1,255 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Unit - Resident's Management System</title>
-    <!-- Google Fonts: Figtree -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap 5.3.2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div id="sidebar-overlay"></div>
-    <div class="wrapper">
-        <!-- Sidebar -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <a href="#" class="unit-dropdown">
-                    Floor 12, Unit T <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-            </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Unit - Resident's Management System</title>
+        <!-- Google Fonts: Figtree -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
 
-            <ul class="list-unstyled nav-menu">
-                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
-                <li><a href="billing.html" class="nav-link">Billings & Payments</a></li>
-                <li><a href="my-unit.html" class="nav-link active">My Unit</a></li>
-                <li><a href="requests.html" class="nav-link">Requests</a></li>
-                <li><a href="account-settings.html" class="nav-link">Account Settings</a></li>
-            </ul>
-        </nav>
+        <!-- Bootstrap 5.3.2 CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
 
-        <!-- Page Content -->
-        <div id="content">
-            <div class="mobile-header d-lg-none mb-3">
-                <i class="bi bi-list mobile-nav-toggle" id="sidebarCollapse"></i>
-            </div>
+        <!-- Bootstrap Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        />
 
-            <div class="header-section">
-                <h2 class="dashboard-title">My Unit</h2>
-                <p class="dashboard-subtitle">ADDITIONAL OFFICE FEATURES IN JUST THE TIP OF YOUR FINGERS</p>
-            </div>
-            
-            <hr class="my-4">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div id="sidebar-overlay"></div>
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <a href="#" class="unit-dropdown">
+                        Floor 12, Unit T
+                        <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                </div>
 
-            <!-- Title & Area -->
-            <div class="d-flex justify-content-between align-items-baseline mb-4">
-                <h3 class="bold-2x font-md">Floor 12, unit T</h3>
-                <div class="text-muted font-xs bold-1x">TOTAL AREA <span class="text-dark ms-2">116 M²</span></div>
-            </div>
+                <ul class="list-unstyled nav-menu">
+                    <li>
+                        <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="billing.html" class="nav-link"
+                            >Billings & Payments</a
+                        >
+                    </li>
+                    <li>
+                        <a href="my-unit.html" class="nav-link active"
+                            >My Unit</a
+                        >
+                    </li>
+                    <li>
+                        <a href="requests.html" class="nav-link">Requests</a>
+                    </li>
+                    <li>
+                        <a href="account-settings.html" class="nav-link"
+                            >Account Settings</a
+                        >
+                    </li>
+                </ul>
+            </nav>
 
-            <div class="row">
-                <!-- Gallery Section -->
-                <div class="col-lg-8 mb-4">
-                    <div class="row g-3">
-                        <div class="col-2">
-                            <div class="unit-thumbnails d-flex flex-column gap-3">
-                                <div class="thumb-item active">
-                                    <div class="img-placeholder-sm"></div>
-                                </div>
-                                <div class="thumb-item">
-                                    <div class="img-placeholder-sm"></div>
-                                </div>
-                                <div class="thumb-item">
-                                    <div class="img-placeholder-sm"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-10">
-                            <div class="main-unit-image">
-                                <!-- Main asset image -->
-                                <div class="img-placeholder-lg main-img-box">
-                                    <span class="d-none">Custom Image Here</span>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Page Content -->
+            <div id="content">
+                <div class="mobile-header d-lg-none mb-3">
+                    <i
+                        class="bi bi-list mobile-nav-toggle"
+                        id="sidebarCollapse"
+                    ></i>
+                </div>
+
+                <div class="header-section">
+                    <h2 class="dashboard-title">My Unit</h2>
+                    <p class="dashboard-subtitle">
+                        ADDITIONAL OFFICE FEATURES IN JUST THE TIP OF YOUR
+                        FINGERS
+                    </p>
+                </div>
+
+                <hr class="my-4" />
+
+                <!-- Title & Area -->
+                <div
+                    class="d-flex justify-content-between align-items-baseline mb-4"
+                >
+                    <h3 class="bold-2x font-md">Floor 12, unit T</h3>
+                    <div class="text-muted font-xs bold-1x">
+                        TOTAL AREA <span class="text-dark ms-2">116 M²</span>
                     </div>
                 </div>
 
-                <!-- Control/Floorplan Section -->
-                <div class="col-lg-4 mb-4">
-                    <!-- Floor Plan Mockup -->
-                    <div class="floor-plan-card mb-4">
-                        <div class="floor-plan-img"></div>
+                <div class="row">
+                    <!-- Gallery Section -->
+                    <div class="col-lg-8 mb-4">
+                        <div class="row g-3">
+                            <div class="col-2">
+                                <div
+                                    class="unit-thumbnails d-flex flex-column gap-3"
+                                >
+                                    <div
+                                        class="thumb-item active"
+                                        data-image="img/image1.png"
+                                    >
+                                        <img
+                                            src="img/image1.png"
+                                            alt="Office View 1"
+                                            class="img-thumbnail"
+                                        />
+                                    </div>
+                                    <div
+                                        class="thumb-item"
+                                        data-image="img/image2.png"
+                                    >
+                                        <img
+                                            src="img/image2.png"
+                                            alt="Office View 2"
+                                            class="img-thumbnail"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="main-unit-image">
+                                    <!-- Main asset image -->
+                                    <img
+                                        src="img/image1.png"
+                                        alt="Unit Main Image"
+                                        class="main-img-box img-fluid"
+                                        id="mainUnitImage"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Interior Choice Cards -->
-                    <div class="interior-choices">
-                        <!-- SIGNATURE Card -->
-                        <div class="interior-card signature expanded mb-3">
-                            <div class="card-top-bar d-flex justify-content-between align-items-center">
-                                <span class="card-brand">SIGNATURE</span>
-                                <i class="bi bi-dash"></i>
+                    <!-- Control/Floorplan Section -->
+                    <div class="col-lg-4 mb-4">
+                        <!-- Floor Plan -->
+                        <div class="floor-plan-card mb-4">
+                            <img
+                                src="img/floorplan.png"
+                                alt="Floor Plan"
+                                class="floor-plan-img img-fluid"
+                            />
+                        </div>
+
+                        <!-- Interior Choice Cards -->
+                        <div class="interior-choices" data-active="signature">
+                            <!-- SIGNATURE Header -->
+                            <div class="interior-header signature" data-card="signature">
+                                <div class="header-content">
+                                    <span class="header-brand">SIGNATURE</span>
+                                    <span class="header-subtitle">The ultimate business address.</span>
+                                </div>
+                                <i class="bi bi-dash toggle-icon"></i>
                             </div>
-                            <div class="card-inner-body p-4">
-                                <h5 class="interior-title mb-4">CUSTOM INTERIOR</h5>
-                                <div class="d-flex justify-content-between align-items-center mb-4">
+                            
+                            <!-- SIGNATURE Body -->
+                            <div class="interior-body signature" data-card="signature">
+                                <h5 class="interior-title">CUSTOM INTERIOR</h5>
+                                <div class="interior-brand-row d-flex justify-content-between align-items-center">
                                     <div class="d-flex align-items-center gap-2">
-                                        <div class="brand-icon-mini"></div>
-                                        <span class="brand-name-small">SIGNATURE</span>
+                                        <i class="bi bi-house-door-fill brand-icon"></i>
+                                        <span class="brand-name">SIGNATURE</span>
                                     </div>
-                                    <span class="price-val">USD 5,000</span>
+                                    <span class="price-val">USD 6,000</span>
                                 </div>
 
                                 <!-- Options Group -->
-                                <div class="options-group mb-4">
+                                <div class="options-group">
                                     <label class="option-label">CEILING</label>
                                     <div class="swatch-list d-flex gap-2">
-                                        <div class="swatch-item bg-dark active"></div>
-                                        <div class="swatch-item" style="background: #999;"></div>
-                                        <div class="swatch-item" style="background: #eee;"></div>
+                                        <div class="swatch-item active" style="background: #1a1a1a; border: 2px solid #d4a853;"></div>
+                                        <div class="swatch-item" style="background: #8b7d6b;"></div>
+                                        <div class="swatch-item" style="background: #e8e8e8;"></div>
                                     </div>
                                 </div>
 
-                                <div class="options-group mb-4">
+                                <div class="options-group">
                                     <label class="option-label">WALL PANEL</label>
                                     <div class="swatch-list d-flex gap-2">
-                                        <div class="swatch-item" style="background: #c2b280;"></div>
-                                        <div class="swatch-item" style="background: #444;"></div>
-                                        <div class="swatch-item" style="background: #e1d5ba;"></div>
+                                        <div class="swatch-item active" style="background: linear-gradient(135deg, #c4b49a 50%, #8b7355 50%);"></div>
+                                        <div class="swatch-item" style="background: linear-gradient(135deg, #d4c4a8 50%, #2a2a2a 50%);"></div>
+                                        <div class="swatch-item" style="background: #a09080;"></div>
                                     </div>
                                 </div>
 
                                 <div class="options-group">
                                     <label class="option-label">TABLE TOP</label>
                                     <div class="swatch-list d-flex gap-2">
-                                        <div class="swatch-item" style="background: #8b4513;"></div>
-                                        <div class="swatch-item" style="background: #cd853f;"></div>
-                                        <div class="swatch-item bg-black"></div>
+                                        <div class="swatch-item active" style="background: #8b5a2b; border: 2px solid #d4a853;"></div>
+                                        <div class="swatch-item" style="background: #d4b896;"></div>
+                                        <div class="swatch-item" style="background: #1a1a1a;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PRESTIGE Header -->
+                            <div class="interior-header prestige" data-card="prestige">
+                                <div class="header-content">
+                                    <span class="header-brand">PRESTIGE</span>
+                                    <span class="header-subtitle">Elevated space for growing success.</span>
+                                </div>
+                                <i class="bi bi-plus toggle-icon"></i>
+                            </div>
+                            
+                            <!-- PRESTIGE Body (Hidden) -->
+                            <div class="interior-body prestige d-none" data-card="prestige">
+                                <h5 class="interior-title">CUSTOM INTERIOR</h5>
+                                <div class="interior-brand-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="bi bi-gem brand-icon"></i>
+                                        <span class="brand-name">PRESTIGE</span>
+                                    </div>
+                                    <span class="price-val">USD 4,000</span>
+                                </div>
+
+                                <!-- Options Group -->
+                                <div class="options-group">
+                                    <label class="option-label">CEILING</label>
+                                    <div class="swatch-list d-flex gap-2">
+                                        <div class="swatch-item active" style="background: #1a1a1a; border: 2px solid #d4a853;"></div>
+                                        <div class="swatch-item" style="background: #8b7d6b;"></div>
+                                        <div class="swatch-item" style="background: #e8e8e8;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="options-group">
+                                    <label class="option-label">WALL PANEL</label>
+                                    <div class="swatch-list d-flex gap-2">
+                                        <div class="swatch-item active" style="background: linear-gradient(135deg, #c4b49a 50%, #8b7355 50%);"></div>
+                                        <div class="swatch-item" style="background: linear-gradient(135deg, #d4c4a8 50%, #2a2a2a 50%);"></div>
+                                        <div class="swatch-item" style="background: #a09080;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="options-group">
+                                    <label class="option-label">TABLE TOP</label>
+                                    <div class="swatch-list d-flex gap-2">
+                                        <div class="swatch-item active" style="background: #8b5a2b; border: 2px solid #d4a853;"></div>
+                                        <div class="swatch-item" style="background: #d4b896;"></div>
+                                        <div class="swatch-item" style="background: #1a1a1a;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ESSENTIALS Header -->
+                            <div class="interior-header essentials" data-card="essentials">
+                                <div class="header-content">
+                                    <span class="header-brand">ESSENTIALS</span>
+                                    <span class="header-subtitle">Smart entry into ownership.</span>
+                                </div>
+                                <i class="bi bi-plus toggle-icon"></i>
+                            </div>
+                            
+                            <!-- ESSENTIALS Body (Hidden) -->
+                            <div class="interior-body essentials d-none" data-card="essentials">
+                                <h5 class="interior-title">CUSTOM INTERIOR</h5>
+                                <div class="interior-brand-row d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <i class="bi bi-box brand-icon"></i>
+                                        <span class="brand-name">ESSENTIALS</span>
+                                    </div>
+                                    <span class="price-val">USD 2,500</span>
+                                </div>
+
+                                <!-- Options Group -->
+                                <div class="options-group">
+                                    <label class="option-label">CEILING</label>
+                                    <div class="swatch-list d-flex gap-2">
+                                        <div class="swatch-item active" style="background: #1a1a1a; border: 2px solid #d4a853;"></div>
+                                        <div class="swatch-item" style="background: #8b7d6b;"></div>
+                                        <div class="swatch-item" style="background: #e8e8e8;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="options-group">
+                                    <label class="option-label">WALL PANEL</label>
+                                    <div class="swatch-list d-flex gap-2">
+                                        <div class="swatch-item active" style="background: linear-gradient(135deg, #c4b49a 50%, #8b7355 50%);"></div>
+                                        <div class="swatch-item" style="background: linear-gradient(135deg, #d4c4a8 50%, #2a2a2a 50%);"></div>
+                                        <div class="swatch-item" style="background: #a09080;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="options-group">
+                                    <label class="option-label">TABLE TOP</label>
+                                    <div class="swatch-list d-flex gap-2">
+                                        <div class="swatch-item active" style="background: #8b5a2b; border: 2px solid #d4a853;"></div>
+                                        <div class="swatch-item" style="background: #d4b896;"></div>
+                                        <div class="swatch-item" style="background: #1a1a1a;"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- PRESTIGE Card -->
-                        <div class="interior-card prestige mb-3">
-                            <div class="card-top-bar d-flex justify-content-between align-items-center">
-                                <span class="card-brand">PRESTIGE</span>
-                                <i class="bi bi-plus"></i>
-                            </div>
-                        </div>
-
-                        <!-- ESSENTIALS Card -->
-                        <div class="interior-card essentials mb-3">
-                            <div class="card-top-bar d-flex justify-content-between align-items-center">
-                                <span class="card-brand">ESSENTIALS</span>
-                                <i class="bi bi-plus"></i>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
 
-            <hr class="my-5">
+                <hr class="my-5" />
 
-            <!-- Selected Adds On Section -->
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h4 class="section-title mb-4">YOUR SELECTED ADDS ON</h4>
-                    
-                    <div class="adds-on-container">
-                        <!-- CEILING Group -->
-                        <div class="adds-on-group">
-                            <h6 class="adds-on-category mb-3">CEILING</h6>
-                            <div class="adds-on-item-row d-flex align-items-center mb-4">
-                                <div class="swatch-square me-3" style="background: #eee;"></div>
-                                <div class="adds-on-details d-flex justify-content-between flex-grow-1 align-items-center">
-                                    <div class="adds-on-name">WHITE</div>
-                                    <div class="adds-on-area">60 M²</div>
-                                    <div class="adds-on-unit-price text-muted">USD 20/M²</div>
-                                    <div class="adds-on-total bold-2x">USD 1,200.00</div>
+                <!-- Selected Adds On Section -->
+                <div class="row mb-5">
+                    <div class="col-lg-8">
+                        <h4 class="selected-adds-title">YOUR SELECTED ADDS ON</h4>
+
+                        <div class="selected-adds-table">
+                            <!-- CEILING Group -->
+                            <div class="adds-category">
+                                <div class="category-label">CEILING</div>
+                                <div class="adds-item">
+                                    <div class="item-swatch" style="background: #e8e8e8;"></div>
+                                    <div class="item-name">WHITE</div>
+                                    <div class="item-area">60 m²</div>
+                                    <div class="item-unit-price">USD 20/m²</div>
+                                    <div class="item-total">USD 1,200.00</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- WALL PANEL Group -->
-                        <div class="adds-on-group pt-4 border-top">
-                            <h6 class="adds-on-category mb-3 mt-4">WALL PANEL</h6>
-                            <div class="adds-on-item-row d-flex align-items-center mb-3">
-                                <div class="swatch-square me-3" style="background: #c2b280;"></div>
-                                <div class="adds-on-details d-flex justify-content-between flex-grow-1 align-items-center">
-                                    <div class="adds-on-name">BEIGE</div>
-                                    <div class="adds-on-area">60 M²</div>
-                                    <div class="adds-on-unit-price text-muted">USD 20/M²</div>
-                                    <div class="adds-on-total bold-2x">USD 1,200.00</div>
+                            <!-- WALL PANEL Group -->
+                            <div class="adds-category">
+                                <div class="category-label">WALL PANEL</div>
+                                <div class="adds-item">
+                                    <div class="item-swatch" style="background: #c4b49a;"></div>
+                                    <div class="item-name">BEIGE</div>
+                                    <div class="item-area">60 m²</div>
+                                    <div class="item-unit-price">USD 20/m²</div>
+                                    <div class="item-total">USD 1,200.00</div>
+                                </div>
+                                <div class="adds-item">
+                                    <div class="item-swatch" style="background: #8b7355;"></div>
+                                    <div class="item-name">SAND</div>
+                                    <div class="item-area">60 m²</div>
+                                    <div class="item-unit-price">USD 20/m²</div>
+                                    <div class="item-total">USD 1,200.00</div>
                                 </div>
                             </div>
-                            <div class="adds-on-item-row d-flex align-items-center mb-4">
-                                <div class="swatch-square me-3" style="background: #444;"></div>
-                                <div class="adds-on-details d-flex justify-content-between flex-grow-1 align-items-center">
-                                    <div class="adds-on-name">SAND</div>
-                                    <div class="adds-on-area">60 M²</div>
-                                    <div class="adds-on-unit-price text-muted">USD 20/M²</div>
-                                    <div class="adds-on-total bold-2x">USD 1,200.00</div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- TABLE TOP Group -->
-                        <div class="adds-on-group pt-4 border-top">
-                            <h6 class="adds-on-category mb-3 mt-4">TABLE TOP</h6>
-                            <div class="adds-on-item-row d-flex align-items-center mb-4">
-                                <div class="swatch-square me-3 bg-black"></div>
-                                <div class="adds-on-details d-flex justify-content-between flex-grow-1 align-items-center">
-                                    <div class="adds-on-name">BLACK</div>
-                                    <div class="adds-on-area">60 M²</div>
-                                    <div class="adds-on-unit-price text-muted">USD 20/M²</div>
-                                    <div class="adds-on-total bold-2x">USD 1,200.00</div>
+                            <!-- TABLE TOP Group -->
+                            <div class="adds-category">
+                                <div class="category-label">TABLE TOP</div>
+                                <div class="adds-item">
+                                    <div class="item-swatch" style="background: #1a1a1a;"></div>
+                                    <div class="item-name">BLACK</div>
+                                    <div class="item-area">60 m²</div>
+                                    <div class="item-unit-price">USD 20/m²</div>
+                                    <div class="item-total">USD 1,200.00</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Footer Summary Card -->
-                <div class="col-lg-4">
-                    <div class="unit-summary-sidebar-card p-4">
-                        <h5 class="bold-2x mb-1">Floor 12, unit T</h5>
-                        <p class="text-muted font-xs mb-4">116 M²</p>
-                        
-                        <div class="d-flex justify-content-between align-items-center mb-4 border-top pt-3">
-                            <span class="text-muted font-xs bold-1x">TOTAL PRICE*</span>
-                            <span class="bold-2x h5 mb-0">USD 500,000</span>
-                        </div>
+                    <!-- Summary Card -->
+                    <div class="col-lg-4">
+                        <div class="summary-card">
+                            <div class="summary-header">
+                                <div class="summary-unit">Floor 12, unit T</div>
+                                <div class="summary-area">116 M²</div>
+                            </div>
+                            
+                            <div class="summary-price-row">
+                                <span class="price-label">TOTAL PRICE*</span>
+                                <span class="price-value">USD 500,000</span>
+                            </div>
 
-                        <div class="d-grid gap-2 mt-4">
-                            <button class="btn btn-outline-secondary btn-unit-action">DOWNLOAD INVOICE</button>
-                            <button class="btn btn-outline-secondary btn-unit-action">SAVE CONFIGURATION</button>
-                            <button class="btn btn-dark btn-purchase mt-2">PURCHASE INTERIOR</button>
-                        </div>
-                        <div class="text-center mt-3">
-                            <a href="#" class="text-muted text-decoration-underline" style="font-size: 0.6rem; font-weight: 700;">TERMS AND CONDITION</a>
+                            <div class="summary-actions">
+                                <button class="btn-summary btn-outline">DOWNLOAD INVOICE</button>
+                                <button class="btn-summary btn-outline">SAVE CONFIGURATION</button>
+                                <button class="btn-summary btn-primary">PURCHASE INTERIOR</button>
+                            </div>
+                            
+                            <a href="#" class="terms-link">TERMS AND CONDITION</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- jQuery 3.7.1 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap 5.3.2 Bundle JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
-</body>
+        <!-- jQuery 3.7.1 -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- Bootstrap 5.3.2 Bundle JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/script.js"></script>
+    </body>
 </html>

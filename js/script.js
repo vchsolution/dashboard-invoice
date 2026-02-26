@@ -91,12 +91,33 @@ $(document).ready(function() {
     $('.thumb-item').on('click', function() {
         $('.thumb-item').removeClass('active');
         $(this).addClass('active');
-        // In a real app, you'd change the src of the main image here
+        // Change main image source
+        const newImageSrc = $(this).data('image');
+        $('#mainUnitImage').attr('src', newImageSrc);
     });
 
-    // My Unit: Swatch selection
-    $('.swatch-item').on('click', function() {
-        $(this).parent().find('.swatch-item').removeClass('active');
+    // My Unit: Interior Card Toggle
+    $('.interior-header').on('click', function() {
+        const cardType = $(this).data('card');
+        const body = $('.interior-body[data-card="' + cardType + '"]');
+        const icon = $(this).find('.toggle-icon');
+        const isExpanded = !body.hasClass('d-none');
+        
+        // Close all bodies first
+        $('.interior-body').addClass('d-none');
+        $('.interior-header .toggle-icon').removeClass('bi-dash').addClass('bi-plus');
+        
+        // If clicked one was closed, open it; if already open, keep it closed (toggle)
+        if (!isExpanded) {
+            body.removeClass('d-none');
+            icon.removeClass('bi-plus').addClass('bi-dash');
+        }
+    });
+    
+    // Handle swatch selection
+    $('.interior-body .swatch-item').on('click', function() {
+        const swatchList = $(this).closest('.swatch-list');
+        swatchList.find('.swatch-item').removeClass('active');
         $(this).addClass('active');
     });
 
