@@ -10,7 +10,8 @@
     --primary-color: #4e81fb;
     --text-muted: #888;
     --border-color: #dee2e6;
-    --bg-light: #fbfcff; /* Updated to boss's background */
+    --bg-light: #fbfcff;
+    /* Updated to boss's background */
 }
 
 html {
@@ -31,13 +32,11 @@ section[id] {
 }
 
 .navbar {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 0.7) 30%,
-        rgba(0, 0, 0, 0.3) 60%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.7) 30%,
+            rgba(0, 0, 0, 0.3) 60%,
+            rgba(0, 0, 0, 0) 100%);
 }
 
 .font-xl {
@@ -118,9 +117,9 @@ section[id] {
 }
 
 .login-card {
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     background: #fff;
     padding: 3rem;
     width: 100%;
@@ -266,12 +265,14 @@ section[id] {
     body {
         padding: 1rem;
     }
+
     .login-card {
         padding: 2rem 1.5rem;
         box-shadow: none;
         border: none;
         background: transparent;
     }
+
     .otp-input {
         width: 50px;
         height: 50px;
@@ -302,7 +303,8 @@ section[id] {
     margin-left: 250px;
     padding: 50px 60px;
     min-height: 100vh;
-    background-color: #f8f9fa; /* Restored light gray background */
+    background-color: #f8f9fa;
+    /* Restored light gray background */
 }
 
 /* Sidebar Elements */
@@ -342,7 +344,8 @@ section[id] {
     transition: all 0.2s;
 }
 
-.nav-menu .nav-link:hover, .nav-menu .nav-link.active {
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active {
     background-color: #eff4ff;
     color: #4e81fb;
 }
@@ -573,20 +576,23 @@ section[id] {
     #sidebar {
         margin-left: -250px;
     }
+
     #sidebar.active {
         margin-left: 0;
     }
+
     #content {
         width: 100%;
         margin-left: 0;
         padding: 24px;
         background-color: #fdfdfd;
     }
-    
+
     .header-section .dashboard-title {
         font-size: 1.4rem;
         margin-bottom: 8px;
     }
+
     .header-section .dashboard-subtitle {
         font-size: 0.65rem;
         font-weight: 700;
@@ -673,7 +679,7 @@ section[id] {
         gap: 40px;
         margin: 45px 0 30px;
     }
-    
+
     .tab-item {
         padding-bottom: 8px;
         font-size: 0.85rem;
@@ -683,11 +689,11 @@ section[id] {
         text-decoration: none;
         position: relative;
     }
-    
+
     .tab-item.active {
         color: var(--primary-color);
     }
-    
+
     .tab-item.active::after {
         content: '';
         position: absolute;
@@ -769,6 +775,7 @@ section[id] {
     .tab-content {
         display: none;
     }
+
     .tab-content.active {
         display: block;
     }
@@ -786,7 +793,7 @@ section[id] {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0, 0, 0, 0.5);
         z-index: 999;
         transition: all 0.3s;
     }
@@ -849,7 +856,8 @@ section[id] {
     display: block;
 }
 
-.request-input, .request-textarea {
+.request-input,
+.request-textarea {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 12px 15px;
@@ -858,7 +866,8 @@ section[id] {
     background: #fff;
 }
 
-.request-input:focus, .request-textarea:focus {
+.request-input:focus,
+.request-textarea:focus {
     box-shadow: none;
     border-color: #4e81fb;
 }
@@ -907,10 +916,13 @@ section[id] {
     .section-title {
         font-size: 1.1rem;
     }
+
     .accordion-button {
         font-size: 0.9rem;
     }
-    .request-input, .request-textarea {
+
+    .request-input,
+    .request-textarea {
         font-size: 0.95rem;
     }
 }
@@ -1007,23 +1019,60 @@ section[id] {
 
 .billing-table tbody tr {
     background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .billing-table tbody td {
     border: 1px solid #eee;
     border-style: solid none;
-    padding: 12px 15px; /* Reduced vertical padding */
+    padding: 12px 15px;
+    /* Reduced vertical padding */
     vertical-align: middle;
 }
 
-.billing-table th:nth-child(1), .billing-table td:nth-child(1) { width: 15%; } /* Payment */
-.billing-table th:nth-child(2), .billing-table td:nth-child(2) { width: 13%; } /* Amount */
-.billing-table th:nth-child(3), .billing-table td:nth-child(3) { width: 17%; } /* Billing Number */
-.billing-table th:nth-child(4), .billing-table td:nth-child(4) { width: 15%; } /* Billing Date */
-.billing-table th:nth-child(5), .billing-table td:nth-child(5) { width: 15%; } /* Status */
-.billing-table th:nth-child(6), .billing-table td:nth-child(6) { width: 8%; }  /* Action */
-.billing-table th:nth-child(7), .billing-table td:nth-child(7) { width: 17%; text-align: right; } /* Invoice */
+.billing-table th:nth-child(1),
+.billing-table td:nth-child(1) {
+    width: 15%;
+}
+
+/* Payment */
+.billing-table th:nth-child(2),
+.billing-table td:nth-child(2) {
+    width: 13%;
+}
+
+/* Amount */
+.billing-table th:nth-child(3),
+.billing-table td:nth-child(3) {
+    width: 17%;
+}
+
+/* Billing Number */
+.billing-table th:nth-child(4),
+.billing-table td:nth-child(4) {
+    width: 15%;
+}
+
+/* Billing Date */
+.billing-table th:nth-child(5),
+.billing-table td:nth-child(5) {
+    width: 15%;
+}
+
+/* Status */
+.billing-table th:nth-child(6),
+.billing-table td:nth-child(6) {
+    width: 8%;
+}
+
+/* Action */
+.billing-table th:nth-child(7),
+.billing-table td:nth-child(7) {
+    width: 17%;
+    text-align: right;
+}
+
+/* Invoice */
 
 .billing-table tbody td:first-child {
     border-left-style: solid;
@@ -1038,7 +1087,8 @@ section[id] {
 }
 
 .table-val {
-    font-size: 0.95rem; /* Larger as per screenshot */
+    font-size: 0.95rem;
+    /* Larger as per screenshot */
     font-weight: 700;
     color: #333;
 }
@@ -1138,7 +1188,8 @@ section[id] {
     width: 100%;
     aspect-ratio: 1;
     background-color: #eee;
-    background-image: url('../img/office_interior.png'); /* Mocking asset */
+    background-image: url('../img/office_interior.png');
+    /* Mocking asset */
     background-size: cover;
     background-position: center;
     border-radius: 4px;
@@ -1149,7 +1200,8 @@ section[id] {
     width: 100%;
     aspect-ratio: 16/10;
     background-color: #ddd;
-    background-image: url('../img/office_interior.png'); /* Main asset */
+    background-image: url('../img/office_interior.png');
+    /* Main asset */
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -1380,7 +1432,7 @@ section[id] {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 12px;
 }
 
@@ -1401,7 +1453,7 @@ section[id] {
 
 .interior-header .header-subtitle {
     font-size: 0.7rem;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
     margin-top: 2px;
 }
 
@@ -1464,7 +1516,7 @@ section[id] {
 .interior-body .interior-brand-row {
     margin-bottom: 24px;
     padding-bottom: 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .interior-body .brand-icon {
@@ -1518,12 +1570,12 @@ section[id] {
 }
 
 .interior-body.signature .option-label {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .interior-body.prestige .option-label,
 .interior-body.essentials .option-label {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .interior-body .swatch-list {
@@ -1546,4 +1598,141 @@ section[id] {
 .interior-body .swatch-item.active {
     border-color: #d4a853;
     box-shadow: 0 0 0 2px rgba(212, 168, 83, 0.3);
+}
+
+/* Interior Features Carousel */
+.custom-indicators {
+    position: static;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.custom-indicators [data-bs-target] {
+    width: 25px !important;
+    height: 5px !important;
+    border-radius: 4px !important;
+    background-color: #aaa !important;
+    border: none !important;
+    opacity: 0.5;
+    margin: 0 4px !important;
+}
+
+.custom-indicators .active {
+    background-color: #333 !important;
+    width: 35px !important;
+    opacity: 1;
+}
+
+/* Mobile Gallery Carousel - My Unit Page */
+.unitImageSwiper {
+    width: 100%;
+    height: auto;
+}
+
+.unitImageSwiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.unitImageSwiper .swiper-pagination-bullet {
+    background-color: #4e81fb;
+    opacity: 0.4;
+}
+
+.unitImageSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #4e81fb;
+    opacity: 1;
+}
+
+.unitImageSwiper .swiper-button-next,
+.unitImageSwiper .swiper-button-prev {
+    color: #4e81fb;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.unitImageSwiper .swiper-button-next:after,
+.unitImageSwiper .swiper-button-prev:after {
+    font-size: 24px;
+}
+
+/* Interior Image Carousel - Bottom Section */
+.interiorImageSwiper {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.interiorImageSwiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.interiorImageSwiper .swiper-pagination-bullet {
+    background-color: #4e81fb;
+    opacity: 0.4;
+}
+
+.interiorImageSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #4e81fb;
+    opacity: 1;
+}
+
+.interiorImageSwiper .swiper-button-next,
+.interiorImageSwiper .swiper-button-prev {
+    color: #4e81fb;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.interiorImageSwiper .swiper-button-next:after,
+.interiorImageSwiper .swiper-button-prev:after {
+    font-size: 24px;
+}
+
+/* Desktop Interior Gallery - Bottom Section */
+.interior-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.interior-thumb-item {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.interior-thumb-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.interior-thumb-item.active {
+    border-color: var(--primary-color);
+}
+
+.main-interior-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f5f5f5;
 }
